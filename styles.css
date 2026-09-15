@@ -1,0 +1,2996 @@
+/* ==========================================================================
+   ROYAL MAHARASHTRIAN GANESHOTSAV 2026 - HANDCRAFTED LUXURY PATRIKA
+   Savle Parivar Imperial Invitation
+   ========================================================================== */
+
+/* --- Royal Color Palette & Typography Variables --- */
+:root {
+  /* Rich Layered Oxblood & Velvet Maroon (शाही कुंकू व मखमली जांभळा-लाल) */
+  --crimson-obsidian: #120104;
+  --crimson-deep: #1f0206;
+  --crimson-velvet: #34040b;
+  --crimson-rich: #4d0711;
+  --crimson-royal: #6b0b18;
+  --crimson-accent: #8e1022;
+
+  /* Antique Metallic Gold Foil & Brass (अस्सल सोन्याचा मुलामा / सोनेरी जरी) */
+  --gold-light: #fce7aa;
+  --gold-foil: #dfb152;
+  --gold-antique: #b88628;
+  --gold-bronze: #8a5e16;
+  --gold-dark: #583c0c;
+  --gold-glow: rgba(223, 177, 82, 0.4);
+
+  /* Silk Parchment & Ink (शाही रेशमी कागद व शाई) */
+  --silk-paper: #fcf8ef;
+  --silk-cream: #f7efe0;
+  --silk-warm: #ede1cb;
+  --silk-tan: #e1d2b7;
+  --ink-charcoal: #231617;
+  --ink-maroon: #4a060d;
+  --ink-subtle: #5f4b4c;
+
+  /* Typography Stacks */
+  --font-royal-display: 'Rozha One', 'Tiro Devanagari Marathi', serif;
+  --font-marathi-formal: 'Tiro Devanagari Marathi', serif;
+  --font-marathi-festive: 'Yatra One', cursive;
+  --font-devanagari-serif: 'Noto Serif Devanagari', serif;
+  --font-latin-cinzel: 'Cinzel', serif;
+  --font-latin-ornate: 'Cinzel Decorative', cursive;
+  --font-cursive-calligraphy: 'Great Vibes', 'Alex Brush', cursive;
+  --font-modern-clean: 'Poppins', -apple-system, sans-serif;
+
+  /* Multi-Tier Drop Shadow & Candlelight Glow */
+  --shadow-royal-portal: 0 30px 90px rgba(10, 1, 3, 0.75), 0 0 70px rgba(223, 177, 82, 0.16), 0 0 0 1px rgba(223, 177, 82, 0.4);
+  --shadow-pooja-frame: 0 20px 50px rgba(18, 1, 3, 0.65), inset 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Global Reset & Foundation --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-devanagari-serif);
+  background-color: var(--crimson-deep);
+  background-image: 
+    radial-gradient(circle at 50% 10%, #3a040b 0%, #1c0205 55%, #0d0002 100%),
+    repeating-linear-gradient(45deg, rgba(223, 177, 82, 0.015) 0, rgba(223, 177, 82, 0.015) 1px, transparent 0, transparent 18px),
+    repeating-linear-gradient(-45deg, rgba(223, 177, 82, 0.015) 0, rgba(223, 177, 82, 0.015) 1px, transparent 0, transparent 18px);
+  color: var(--ink-charcoal);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Subtle Golden Ambient Glow In Corners */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(223, 177, 82, 0.07) 0%, transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(223, 177, 82, 0.07) 0%, transparent 45%),
+    radial-gradient(circle at 50% 45%, rgba(110, 11, 24, 0.2) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Canvas for Falling Ceremonial Petals & Gold Dust (Visible Graceful Foreground Drift) */
+#flowerCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+}
+
+/* ==========================================================================
+   ROYAL TOP CONTROLS & FESTIVE HEADER
+   ========================================================================== */
+.royal-top-header {
+  position: relative;
+  z-index: 100;
+  background: rgba(26, 2, 5, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(223, 177, 82, 0.35);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+  padding: 10px 24px;
+}
+
+.royal-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.royal-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.om-emblem {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold-foil);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  color: var(--gold-light);
+  font-size: 1.35rem;
+  line-height: 1;
+  background: linear-gradient(135deg, rgba(223, 177, 82, 0.25), rgba(77, 7, 17, 0.45));
+  box-shadow: 0 0 12px rgba(223, 177, 82, 0.3);
+}
+
+.brand-text-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-family: var(--font-royal-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.brand-subtitle {
+  font-family: var(--font-marathi-formal);
+  font-size: 0.8rem;
+  color: var(--gold-foil);
+  opacity: 0.9;
+}
+
+/* --- Language Switcher Segmented Control --- */
+.lang-switch-pill {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(20, 2, 5, 0.75);
+  border: 1px solid rgba(223, 177, 82, 0.5);
+  border-radius: 20px;
+  padding: 3px 5px;
+  gap: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: #dfcaa2;
+  font-family: var(--font-royal-serif);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  letter-spacing: 0.4px;
+}
+
+.lang-btn:hover {
+  color: #fff;
+}
+
+.lang-btn.active {
+  background: linear-gradient(135deg, rgba(223, 177, 82, 0.38), rgba(130, 14, 28, 0.75));
+  color: #fff;
+  border: 1px solid var(--gold-light);
+  box-shadow: 0 0 10px rgba(223, 177, 82, 0.35);
+}
+
+.lang-divider {
+  color: rgba(223, 177, 82, 0.4);
+  font-size: 0.8rem;
+  user-select: none;
+  padding: 0 1px;
+}
+
+.royal-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.modal-svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.royal-btn {
+  background: rgba(255, 255, 255, 0.05);
+  color: #f7efe0;
+  border: 1px solid rgba(223, 177, 82, 0.4);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-family: var(--font-marathi-formal);
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.royal-btn:hover {
+  background: rgba(223, 177, 82, 0.2);
+  border-color: var(--gold-light);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(223, 177, 82, 0.25);
+}
+
+.royal-btn.active {
+  background: linear-gradient(135deg, rgba(223, 177, 82, 0.3), rgba(110, 11, 24, 0.55));
+  border-color: var(--gold-light);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(223, 177, 82, 0.35);
+}
+
+.royal-svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.btn-wa {
+  background: rgba(37, 211, 102, 0.12);
+  border-color: rgba(37, 211, 102, 0.45);
+  color: #8df5b3;
+}
+
+.btn-wa:hover {
+  background: rgba(37, 211, 102, 0.25);
+  border-color: #25d366;
+  color: #fff;
+}
+
+.btn-png {
+  background: rgba(223, 177, 82, 0.15);
+  border-color: rgba(223, 177, 82, 0.6);
+  color: #fae5a2;
+}
+
+.btn-png:hover {
+  background: rgba(223, 177, 82, 0.32);
+  border-color: #fff;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(223, 177, 82, 0.4);
+}
+
+/* Card state during high-resolution PNG export */
+.royal-portal-master.capturing-card {
+  box-shadow: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  border-radius: 8px !important;
+}
+
+.royal-portal-master.capturing-card .darshan-touch-cue {
+  display: none !important;
+}
+
+.royal-portal-master.capturing-card .title-bappa-royal {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #4d0711 !important;
+  color: #4d0711 !important;
+  filter: none !important;
+  font-family: var(--font-royal-display) !important;
+}
+
+.royal-portal-master.capturing-card .title-morya-royal {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #6b0b18 !important;
+  color: #6b0b18 !important;
+  filter: none !important;
+  font-family: var(--font-royal-display) !important;
+}
+
+.royal-portal-master.capturing-card .program-ribbon-badge {
+  display: inline-block !important;
+  text-align: center !important;
+  line-height: 1.4 !important;
+  background: #58060f !important;
+  color: #fae5a2 !important;
+  border: 1.5px solid #dfb152 !important;
+  padding: 4px 16px !important;
+}
+
+.royal-portal-master.capturing-card .program-ribbon-badge .ribbon-text,
+.royal-portal-master.capturing-card .program-ribbon-badge .ribbon-star {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  color: #fae5a2 !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+}
+
+.royal-portal-master.capturing-card .plaque-title {
+  font-family: var(--font-marathi-formal) !important;
+  letter-spacing: 0.5px !important;
+}
+
+.royal-portal-master.capturing-card .royal-sloka {
+  font-family: var(--font-royal-display) !important;
+  color: #58060f !important;
+}
+
+/* Audio Equalizer & BGM Toggle animation */
+.eq-waves {
+  display: none;
+  align-items: flex-end;
+  gap: 2px;
+  height: 12px;
+}
+
+.royal-btn.playing .eq-waves {
+  display: inline-flex;
+}
+
+.eq-waves span {
+  width: 2px;
+  background: var(--gold-light);
+  border-radius: 1px;
+  animation: eqBounce 0.8s infinite ease-in-out alternate;
+}
+
+.eq-waves span:nth-child(1) { height: 4px; animation-delay: 0.1s; }
+.eq-waves span:nth-child(2) { height: 11px; animation-delay: 0.3s; }
+.eq-waves span:nth-child(3) { height: 6px; animation-delay: 0.2s; }
+
+@keyframes eqBounce {
+  0% { height: 3px; }
+  100% { height: 12px; }
+}
+
+#bgmToggleBtn .icon-music-off {
+  display: none;
+}
+
+#bgmToggleBtn.playing .icon-music-on {
+  display: inline-block;
+}
+
+#bgmToggleBtn.playing .icon-music-off {
+  display: none;
+}
+
+#bgmToggleBtn:not(.playing) .icon-music-on {
+  display: none;
+}
+
+#bgmToggleBtn:not(.playing) .icon-music-off {
+  display: inline-block;
+  opacity: 0.65;
+}
+
+/* ==============================================
+   ANTIQUE GOLD LIVE COUNTDOWN STRIP
+   ============================================== */
+.royal-countdown-strip {
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(90deg, #180103 0%, #3a040b 50%, #180103 100%);
+  border-bottom: 1px solid rgba(223, 177, 82, 0.3);
+  padding: 10px 16px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.countdown-flex-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  text-align: center;
+}
+
+.countdown-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gold-light);
+  font-family: var(--font-marathi-formal);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.gold-sparkle-glyph {
+  color: var(--gold-foil);
+  font-size: 0.85rem;
+}
+
+.countdown-units-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.time-block {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(223, 177, 82, 0.35);
+  border-radius: 6px;
+  padding: 3px 10px;
+}
+
+.time-digit {
+  font-family: var(--font-marathi-formal);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  min-width: 24px;
+}
+
+.time-label {
+  font-family: var(--font-marathi-formal);
+  font-size: 0.76rem;
+  color: #ede1cb;
+  opacity: 0.85;
+}
+
+.time-separator {
+  color: var(--gold-foil);
+  font-weight: bold;
+}
+
+/* ==============================================
+   MAIN ROYAL INVITATION PORTAL
+   ============================================== */
+.royal-page-wrapper {
+  position: relative;
+  z-index: 5;
+  padding: 24px 16px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.royal-portal-master {
+  width: 100%;
+  max-width: 1140px;
+  background-color: var(--silk-paper);
+  background-image: 
+    radial-gradient(circle at 50% 12%, rgba(255, 255, 255, 0.95) 0%, rgba(253, 248, 237, 0.88) 55%, rgba(244, 232, 210, 0.95) 100%),
+    url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M0 12h24M12 0v24' stroke='%23dfb152' stroke-width='0.5' stroke-opacity='0.04'/%3E%3C/svg%3E");
+  border-radius: 12px;
+  box-shadow: var(--shadow-royal-portal);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--gold-antique);
+  outline: 1px solid rgba(223, 177, 82, 0.5);
+  outline-offset: -8px;
+  margin-bottom: 24px;
+}
+
+/* Toran Garland Ribbon at Top of Card */
+.toran-garland-ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.toran-svg {
+  width: 100%;
+  height: 48px;
+  display: block;
+}
+
+/* Corner Filigree Brackets */
+.corner-filigree {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.filigree-tl { top: 12px; left: 12px; }
+.filigree-tr { top: 12px; right: 12px; }
+.filigree-bl { bottom: 12px; left: 12px; }
+.filigree-br { bottom: 12px; right: 12px; }
+
+/* Sacred Invocation Header with Peacock (मयूर) Motifs */
+.royal-invocation-header {
+  position: relative;
+  z-index: 10;
+  padding: 38px 20px 8px;
+  text-align: center;
+}
+
+.invocation-flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header-mayur {
+  width: 58px;
+  height: 30px;
+  opacity: 0.9;
+}
+
+.header-mayur svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.sloka-badge-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.invocation-ornament-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 180px;
+  margin: 0 auto;
+}
+
+.hairline-left,
+.hairline-right {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-antique), transparent);
+  flex: 1;
+}
+
+.center-star {
+  color: var(--gold-foil);
+  font-size: 0.72rem;
+}
+
+.royal-sloka {
+  font-family: var(--font-royal-display);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--crimson-rich);
+  letter-spacing: 1.5px;
+  padding: 2px 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+/* ==============================================
+   DUAL SHOWCASE: IDOL ART GALLERY + ROYAL PATRIKA
+   ============================================== */
+.royal-dual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 52px;
+  padding: 10px 42px 34px;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+/* --- LEFT WING: COMPLETE UNCROPPED BAPPA IN TRADITIONAL POOJA FRAME --- */
+.royal-idol-wing {
+  position: relative;
+}
+
+.pooja-mandir-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Temple Gopuram / Prabhavali Arch Crest */
+.temple-arch-crest {
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: -6px;
+  position: relative;
+  z-index: 7;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
+}
+
+.arch-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Carved Traditional Pooja Photo Frame */
+.pooja-carved-frame {
+  position: relative;
+  background: linear-gradient(135deg, #240306 0%, #150103 100%);
+  border-radius: 8px 8px 12px 12px;
+  padding: 12px;
+  border: 4px solid var(--gold-antique);
+  outline: 2px solid var(--gold-foil);
+  outline-offset: 3px;
+  box-shadow: var(--shadow-pooja-frame);
+  cursor: default;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  user-select: none;
+  width: 100%;
+  max-width: 450px;
+}
+
+.pooja-carved-frame:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 60px rgba(24, 2, 4, 0.7), 0 0 30px rgba(223, 177, 82, 0.4);
+}
+
+.frame-gold-matting {
+  border: 2px solid rgba(223, 177, 82, 0.7);
+  border-radius: 8px;
+  padding: 3px;
+  background: #000;
+}
+
+.frame-inner-matting {
+  border-radius: 6px;
+  overflow: hidden;
+  background: #000;
+}
+
+.art-viewport {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.art-bappa-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transform: scale(1.12);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pooja-carved-frame:hover .art-bappa-photo {
+  transform: scale(1.16);
+}
+
+.art-golden-aura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 40%, rgba(255, 215, 0, 0.22) 0%, transparent 65%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.pooja-carved-frame:hover .art-golden-aura {
+  opacity: 1;
+}
+
+
+.frame-museum-plaque {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.plaque-gem {
+  color: var(--gold-foil);
+  font-size: 0.82rem;
+}
+
+.plaque-title {
+  font-family: var(--font-marathi-festive);
+  color: var(--gold-light);
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.art-golden-aura.aura-active {
+  opacity: 1 !important;
+  box-shadow: inset 0 0 60px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.4);
+}
+
+.frame-museum-plaque {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 4px 16px;
+  background: linear-gradient(90deg, transparent 0%, rgba(223, 177, 82, 0.14) 50%, transparent 100%);
+  border-radius: 12px;
+}
+
+/* --- ROYAL DIVINE PUSHPARTPAN BUTTON --- */
+.btn-pooja-pushparpan {
+  position: relative;
+  margin: 16px auto 6px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #600810 0%, #3b0308 50%, #200104 100%);
+  border: 1.5px solid var(--gold-foil);
+  border-radius: 30px;
+  color: var(--gold-light);
+  font-family: var(--font-marathi-festive);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6), 
+              0 0 16px rgba(223, 177, 82, 0.25), 
+              inset 0 0 12px rgba(255, 215, 0, 0.2);
+  outline: none;
+  animation: pushparpanGlow 3s infinite ease-in-out;
+}
+
+@keyframes pushparpanGlow {
+  0%, 100% {
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6), 
+                0 0 14px rgba(223, 177, 82, 0.25), 
+                inset 0 0 10px rgba(255, 215, 0, 0.15);
+    border-color: var(--gold-antique);
+  }
+  50% {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.7), 
+                0 0 24px rgba(255, 215, 0, 0.5), 
+                inset 0 0 18px rgba(255, 215, 0, 0.35);
+    border-color: var(--gold-foil);
+  }
+}
+
+.pooja-btn-shimmer {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 30%,
+    rgba(255, 235, 170, 0.25) 50%,
+    transparent 70%
+  );
+  transform: rotate(25deg) translateY(-100%);
+  transition: transform 0.8s ease;
+  pointer-events: none;
+}
+
+.btn-pooja-pushparpan:hover .pooja-btn-shimmer {
+  transform: rotate(25deg) translateY(100%);
+}
+
+.btn-pooja-pushparpan:hover {
+  background: linear-gradient(135deg, #7a0c16 0%, #4c040b 50%, #2b0206 100%);
+  transform: translateY(-2px) scale(1.04);
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+}
+
+.btn-pooja-pushparpan:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), inset 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.pooja-btn-icon {
+  font-size: 1.15rem;
+  line-height: 1;
+  filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.6));
+  animation: diyaFlicker 2.5s infinite ease-in-out;
+}
+
+@keyframes diyaFlicker {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.95; }
+  50% { transform: scale(1.12) rotate(-3deg); opacity: 1; filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.9)); }
+}
+
+.pooja-btn-ornament {
+  color: var(--gold-foil);
+  font-size: 0.75rem;
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-pooja-pushparpan:hover .pooja-btn-ornament {
+  opacity: 1;
+  transform: scale(1.2);
+  color: var(--gold-light);
+}
+
+.pooja-btn-text {
+  font-family: var(--font-marathi-festive);
+  font-size: 1.02rem;
+  font-weight: 700;
+}
+
+/* --- RIGHT WING: ROYAL INVITATION DECREE (PATRIKA) --- */
+.royal-patrika-wing {
+  position: relative;
+}
+
+.patrika-inner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Grand Centerpiece: Ganpati Bappa Morya! */
+.royal-centerpiece-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.centerpiece-wing {
+  width: 52px;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.centerpiece-wing svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.centerpiece-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centerpiece-crown-crest {
+  width: 38px;
+  height: 20px;
+  margin-bottom: -2px;
+}
+
+.crown-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.title-bappa-royal {
+  font-family: 'Yatra One', 'Noto Serif Devanagari', 'Tiro Devanagari Marathi', serif;
+  font-size: 3.1rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  background: linear-gradient(180deg, #58060f 0%, #7d0c18 45%, #46040a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.9)) drop-shadow(0 4px 10px rgba(85, 8, 16, 0.22));
+}
+
+.title-morya-royal {
+  font-family: 'Yatra One', 'Noto Serif Devanagari', 'Tiro Devanagari Marathi', serif;
+  font-size: 3.9rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 2px;
+  margin-top: -4px;
+  background: linear-gradient(180deg, #6c0a16 0%, #941121 45%, #58060f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.9)) drop-shadow(0 4px 12px rgba(85, 8, 16, 0.25));
+}
+
+.centerpiece-ornate-rule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 190px;
+  margin-top: 4px;
+}
+
+.ornate-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold-foil), var(--gold-antique), transparent);
+  flex: 1;
+}
+
+.ornate-symbol {
+  color: var(--gold-foil);
+  font-size: 0.8rem;
+}
+
+/* Sacred Invitation Verses */
+.royal-verses-plaque {
+  margin-bottom: 20px;
+  max-width: 480px;
+}
+
+.verse-lead-text {
+  font-family: var(--font-marathi-formal);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--ink-maroon);
+}
+
+.lead-emphasis {
+  color: var(--crimson-accent);
+  font-weight: 700;
+  position: relative;
+  white-space: nowrap;
+}
+
+.royal-verse-crest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 140px;
+  margin: 12px auto;
+}
+
+.crest-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-foil), transparent);
+  flex: 1;
+}
+
+.crest-diamond {
+  color: var(--gold-antique);
+  font-size: 0.65rem;
+}
+
+.verse-body-text {
+  font-family: var(--font-marathi-formal);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--ink-maroon);
+}
+
+.verse-vinanti-text {
+  display: inline-block;
+  margin-top: 4px;
+  font-weight: 700;
+  color: var(--crimson-rich);
+}
+
+/* Event Cards: Date & Venue */
+.royal-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 490px;
+  margin-bottom: 18px;
+}
+
+.royal-event-card {
+  background: linear-gradient(145deg, #ffffff 0%, #faf4e6 100%);
+  border: 1.5px solid rgba(223, 177, 82, 0.45);
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04), inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+}
+
+.royal-event-card:hover {
+  border-color: var(--gold-foil);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(77, 7, 17, 0.1), 0 0 12px rgba(223, 177, 82, 0.2);
+}
+
+.event-icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4d0711 0%, #240306 100%);
+  border: 1px solid var(--gold-foil);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-light);
+  flex-shrink: 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.event-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.event-details-text {
+  flex: 1;
+}
+
+.event-label {
+  display: block;
+  font-family: var(--font-marathi-formal);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--crimson-rich);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.event-primary-val {
+  font-family: var(--font-marathi-formal);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--ink-charcoal);
+  line-height: 1.35;
+}
+
+.date-gold-highlight {
+  color: #38040a;
+}
+
+.address-clean-text {
+  font-style: normal;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #2b1718;
+}
+
+.event-card-cue {
+  font-family: var(--font-marathi-formal);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #63050d;
+  background: linear-gradient(135deg, rgba(223, 177, 82, 0.28) 0%, rgba(255, 215, 0, 0.14) 100%);
+  border: 1.2px solid rgba(212, 175, 55, 0.65);
+  padding: 5px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.event-card-cue:hover,
+.royal-event-card:hover .event-card-cue {
+  background: linear-gradient(135deg, #dfb152 0%, #b8860b 100%);
+  color: #1a0204;
+  border-color: #dfb152;
+  box-shadow: 0 4px 12px rgba(223, 177, 82, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Special Program Showcase */
+.royal-program-wrapper {
+  background: linear-gradient(145deg, #ffffff 0%, #faf4e6 100%);
+  border: 1.5px solid rgba(223, 177, 82, 0.45);
+  border-radius: 10px;
+  padding: 14px 16px 16px;
+  width: 100%;
+  max-width: 490px;
+  margin-bottom: 18px;
+  position: relative;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.program-ribbon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(90deg, #4d0711 0%, #7d0c18 50%, #4d0711 100%);
+  color: var(--gold-light);
+  border: 1px solid var(--gold-foil);
+  border-radius: 16px;
+  padding: 4px 14px;
+  font-family: var(--font-marathi-formal);
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ribbon-star {
+  color: var(--gold-light);
+  font-size: 0.65rem;
+}
+
+.program-days-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  width: 100%;
+}
+
+.program-day-card {
+  background: linear-gradient(135deg, rgba(255, 253, 245, 0.95) 0%, rgba(252, 248, 239, 0.98) 100%);
+  border: 1px solid rgba(223, 177, 82, 0.45);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04), inset 0 0 10px rgba(223, 177, 82, 0.05);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.program-day-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold-foil);
+  box-shadow: 0 6px 18px rgba(138, 28, 42, 0.12), inset 0 0 12px rgba(223, 177, 82, 0.1);
+}
+
+.day-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px dashed rgba(223, 177, 82, 0.35);
+  padding-bottom: 6px;
+}
+
+.day-card-badge {
+  font-family: var(--font-marathi-formal);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--royal-crimson);
+  background: linear-gradient(135deg, rgba(138, 28, 42, 0.08) 0%, rgba(212, 175, 55, 0.12) 100%);
+  border: 1px solid rgba(138, 28, 42, 0.25);
+  padding: 3px 12px;
+  border-radius: 16px;
+  letter-spacing: 0.3px;
+}
+
+.day-card-body {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.program-col-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.program-badge-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4d0711 0%, #240306 100%);
+  border: 1px solid var(--gold-foil);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-light);
+  flex-shrink: 0;
+}
+
+.prog-svg {
+  width: 18px;
+  height: 18px;
+}
+
+.program-col-title {
+  font-family: var(--font-marathi-formal);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--crimson-rich);
+  margin-bottom: 2px;
+}
+
+.program-col-time {
+  font-family: var(--font-marathi-formal);
+  font-size: 0.82rem;
+  color: var(--ink-charcoal);
+  font-weight: 500;
+}
+
+/* Lotus Blessing Verse */
+.royal-lotus-blessing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.gold-lotus-symbol {
+  width: 32px;
+  height: 20px;
+  opacity: 0.85;
+}
+
+.blessing-sentence {
+  font-family: var(--font-marathi-formal);
+  font-size: 0.95rem;
+  color: var(--ink-charcoal);
+  line-height: 1.5;
+}
+
+.blessing-sentence-bold {
+  font-weight: 700;
+  color: var(--crimson-rich);
+}
+
+/* ==============================================
+   ROYAL FOOTER: GOLD LETTERPRESS & WARM CANDLELIGHT
+   ============================================== */
+.royal-footer-band {
+  background: linear-gradient(180deg, #240306 0%, #150103 100%);
+  border-top: 2px solid var(--gold-antique);
+  padding: 30px 24px 32px;
+  position: relative;
+  z-index: 10;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer-gold-scallop-trim {
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, var(--gold-antique) 15%, var(--gold-foil) 50%, var(--gold-antique) 85%, transparent 100%);
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.footer-gold-scallop-trim::before {
+  content: '✦ ❖ ✦';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1e0205;
+  padding: 0 14px;
+  color: var(--gold-foil);
+  font-size: 0.72rem;
+  letter-spacing: 5px;
+  white-space: nowrap;
+}
+
+.footer-band-content {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Sacred Golden Modaks flanking Host Presentation */
+.royal-footer-modak {
+  position: relative;
+  width: 48px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.royal-footer-modak:hover {
+  transform: translateY(-2px) scale(1.08);
+}
+
+.modak-glow-aura {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 213, 79, 0.45) 0%, rgba(245, 158, 11, 0.18) 50%, transparent 75%);
+  animation: modakAuraPulse 3s infinite ease-in-out alternate;
+  pointer-events: none;
+}
+
+.modak-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.65)) drop-shadow(0 0 10px rgba(245, 158, 11, 0.3));
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes modakAuraPulse {
+  0% { transform: translate(-50%, -50%) scale(0.92); opacity: 0.65; }
+  100% { transform: translate(-50%, -50%) scale(1.15); opacity: 1; }
+}
+
+/* Host Family Centerpiece */
+.host-presentation-block {
+  text-align: center;
+}
+
+.host-salutation-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.host-star-bullet {
+  color: var(--gold-foil);
+  font-size: 0.72rem;
+}
+
+.host-salutation-text {
+  font-family: var(--font-marathi-formal);
+  font-size: 0.96rem;
+  color: #fce7aa;
+  letter-spacing: 0.5px;
+}
+
+.host-dynasty-name {
+  font-family: var(--font-royal-display);
+  font-size: 2.35rem;
+  font-weight: 800;
+  background: linear-gradient(180deg, #ffffff 0%, #fff2c4 40%, #e6be53 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff2c4;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 16px rgba(223, 177, 82, 0.35));
+}
+
+/* Elegant Cursive Calligraphy for English Host Dynasty & Plaque Titles */
+html[lang="en"] .host-dynasty-name,
+:lang(en) .host-dynasty-name {
+  font-family: var(--font-cursive-calligraphy);
+  font-size: 3.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.15;
+}
+
+html[lang="en"] .plaque-title,
+:lang(en) .plaque-title {
+  font-family: var(--font-cursive-calligraphy);
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+html[lang="en"] .splash-surname-title,
+:lang(en) .splash-surname-title {
+  font-family: var(--font-cursive-calligraphy);
+  font-size: 3.3rem;
+  font-weight: 400;
+}
+
+.host-royal-flourish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 140px;
+  margin: 6px auto 0;
+}
+
+.flourish-arm {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-foil), transparent);
+  flex: 1;
+}
+
+.flourish-core {
+  color: var(--gold-foil);
+  font-size: 0.7rem;
+}
+
+.royal-quick-dock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1140px;
+  margin-top: 22px;
+  padding: 8px 12px;
+  background: linear-gradient(145deg, rgba(38, 4, 10, 0.94) 0%, rgba(18, 1, 4, 0.98) 100%);
+  border: 1.5px solid var(--gold-antique);
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(223, 177, 82, 0.12);
+  position: relative;
+}
+
+.dock-card-item {
+  flex: 1;
+  background: rgba(30, 3, 8, 0.4);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.dock-card-item:hover {
+  background: linear-gradient(145deg, rgba(70, 8, 18, 0.85) 0%, rgba(35, 4, 9, 0.95) 100%);
+  border-color: rgba(223, 177, 82, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5), inset 0 0 12px rgba(223, 177, 82, 0.2);
+}
+
+.dock-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(65, 8, 16, 0.9) 0%, rgba(20, 2, 5, 0.95) 100%);
+  border: 1.5px solid var(--gold-foil);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 0 8px rgba(223, 177, 82, 0.25);
+  transition: all 0.3s ease;
+}
+
+.dock-icon-box svg {
+  width: 20px;
+  height: 20px;
+  color: var(--gold-light);
+  stroke: var(--gold-light);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
+}
+
+.dock-card-item:hover .dock-icon-box {
+  border-color: #ffffff;
+  box-shadow: 0 0 14px rgba(223, 177, 82, 0.5), inset 0 0 10px rgba(223, 177, 82, 0.4);
+  transform: scale(1.06);
+}
+
+.dock-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 54px;
+  padding: 0 4px;
+  flex-shrink: 0;
+  opacity: 0.75;
+}
+
+.divider-line {
+  width: 1px;
+  height: 18px;
+  background: linear-gradient(180deg, transparent, var(--gold-antique), transparent);
+}
+
+.divider-gem {
+  color: var(--gold-foil);
+  font-size: 0.65rem;
+  line-height: 1;
+}
+
+.dock-meta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dock-title-text {
+  font-family: var(--font-marathi-formal);
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.4px;
+  line-height: 1.25;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.dock-sub-text {
+  font-family: var(--font-marathi-formal);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #f3e5ab; /* Warm gold/amber tone */
+  letter-spacing: 0.3px;
+  transition: color 0.25s ease;
+}
+
+.dock-card-item:hover .dock-sub-text {
+  color: #ffffff;
+}
+
+/* ==============================================
+   FLOATING ACTION BUTTONS & MODALS
+   ============================================== */
+.royal-floating-fab-cluster {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 95;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fab-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #240306;
+  border: 1.5px solid var(--gold-foil);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fab-btn:hover {
+  transform: scale(1.1);
+  border-color: #fff;
+  box-shadow: 0 0 16px rgba(223, 177, 82, 0.6);
+}
+
+.fab-share {
+  background: #25d366;
+  border-color: #fff;
+}
+
+/* WhatsApp Share Modal */
+.royal-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(14, 1, 3, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.royal-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.royal-modal-dialog {
+  background: #fdfbf7;
+  border: 2px solid var(--gold-antique);
+  border-radius: 12px;
+  padding: 32px 28px;
+  max-width: 520px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.modal-gold-crest {
+  color: var(--gold-foil);
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.modal-title {
+  font-family: var(--font-royal-display);
+  font-size: 1.4rem;
+  color: var(--crimson-rich);
+  margin-bottom: 8px;
+}
+
+.modal-instruction {
+  font-family: var(--font-marathi-formal);
+  font-size: 0.92rem;
+  color: var(--ink-charcoal);
+  margin-bottom: 16px;
+}
+
+.modal-message-box {
+  background: #fff;
+  border: 1px solid rgba(223, 177, 82, 0.4);
+  border-radius: 8px;
+  padding: 14px;
+  font-family: var(--font-marathi-formal);
+  font-size: 0.86rem;
+  line-height: 1.6;
+  text-align: left;
+  white-space: pre-wrap;
+  max-height: 200px;
+  overflow-y: auto;
+  color: #2b1718;
+  margin-bottom: 20px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.modal-buttons-row {
+  display: flex;
+  gap: 12px;
+}
+
+.modal-btn {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-family: var(--font-marathi-formal);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-secondary {
+  background: #eee3ce;
+  color: var(--crimson-rich);
+}
+
+.btn-secondary:hover {
+  background: #e2d3b6;
+}
+
+.btn-primary {
+  background: #25d366;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #20ba5a;
+}
+
+.modal-close-x {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: var(--ink-subtle);
+  cursor: pointer;
+}
+
+.png-preview-card {
+  max-width: 520px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.png-preview-wrapper {
+  max-height: 52vh;
+  overflow-y: auto;
+  border: 1.5px solid var(--gold-antique);
+  border-radius: 8px;
+  margin: 10px 0 16px 0;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.4);
+  background: #120104;
+  -webkit-overflow-scrolling: touch;
+}
+
+.png-preview-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Audio Notice Pill */
+.audio-notice-pill {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(24, 2, 4, 0.95);
+  border: 1px solid var(--gold-foil);
+  color: var(--gold-light);
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-family: var(--font-marathi-formal);
+  font-size: 0.84rem;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  z-index: 90;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.audio-notice-pill.show {
+  opacity: 1;
+}
+
+/* Toast Notifications */
+.royal-toast-container {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  z-index: 250;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.royal-toast {
+  background: #240306;
+  border: 1.5px solid var(--gold-foil);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-family: var(--font-marathi-formal);
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+  animation: toastSlideIn 0.3s ease forwards;
+}
+
+@keyframes toastSlideIn {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ==============================================
+   RESPONSIVE LAYOUT BREAKPOINTS
+   ============================================== */
+@media (max-width: 960px) {
+  .royal-dual-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 10px 24px 28px;
+  }
+
+  .pooja-mandir-showcase {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .royal-quick-dock {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title-bappa-royal {
+    font-size: 2.7rem;
+  }
+
+  .title-morya-royal {
+    font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Prevent any horizontal overflow */
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .royal-page-wrapper {
+    padding: 10px 6px 36px;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .royal-portal-master {
+    width: 100%;
+    max-width: 100%;
+    border-width: 4px;
+    outline-offset: -3px;
+  }
+
+  /* Header Layout on Mobile */
+  .royal-top-header {
+    padding: 8px 10px 10px;
+  }
+
+  .royal-header-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 8px;
+    width: 100%;
+  }
+
+  .royal-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .om-emblem {
+    width: 28px;
+    height: 28px;
+    font-size: 0.95rem;
+    flex-shrink: 0;
+  }
+
+  .brand-text-block {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .brand-title {
+    font-size: 0.86rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .brand-subtitle {
+    font-size: 0.66rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .lang-switch-pill {
+    padding: 2px 4px;
+    flex-shrink: 0;
+    justify-self: end;
+  }
+
+  .lang-btn {
+    padding: 3px 6px;
+    font-size: 0.70rem;
+    letter-spacing: 0;
+  }
+
+  .lang-divider {
+    font-size: 0.70rem;
+  }
+
+  .royal-actions {
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 2px;
+  }
+
+  .royal-actions .btn-text {
+    display: none;
+  }
+
+  .royal-btn {
+    padding: 6px 10px;
+  }
+
+  /* Countdown on Mobile */
+  .royal-countdown-strip {
+    padding: 8px 6px;
+  }
+
+  .countdown-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .countdown-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 0.8rem;
+    gap: 4px;
+    padding: 0 4px;
+  }
+
+  .countdown-heading-text {
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.35;
+  }
+
+  .countdown-units-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .time-block {
+    padding: 2px 6px;
+    gap: 3px;
+  }
+
+  .time-digit {
+    font-size: 0.98rem;
+    min-width: 18px;
+  }
+
+  .time-label {
+    font-size: 0.68rem;
+  }
+
+  .time-separator {
+    font-size: 0.85rem;
+  }
+
+  /* Invocation Header on Mobile */
+  .royal-invocation-header {
+    padding: 24px 8px 6px;
+  }
+
+  .invocation-flex-row {
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header-mayur {
+    width: 36px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  .royal-sloka {
+    font-size: 1.22rem;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+
+  .invocation-ornament-line {
+    width: 130px;
+    gap: 6px;
+  }
+
+  /* Main Dual Grid on Mobile */
+  .royal-dual-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 6px 16px;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .royal-idol-wing,
+  .royal-patrika-wing {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pooja-mandir-showcase {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .temple-arch-crest {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .pooja-carved-frame {
+    max-width: 320px;
+    width: 100%;
+    padding: 8px;
+  }
+
+  .plaque-title {
+    font-size: 0.82rem;
+  }
+
+  .title-bappa-royal {
+    font-size: 1.9rem;
+  }
+
+  .title-morya-royal {
+    font-size: 2.3rem;
+  }
+
+  .centerpiece-wing {
+    width: 26px;
+    height: 45px;
+  }
+
+  .centerpiece-titles {
+    padding: 0 4px;
+  }
+
+  .verse-lead-text {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    padding: 0 4px;
+  }
+
+  .verse-body-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.55;
+    color: var(--ink-maroon);
+    padding: 0 4px;
+  }
+
+  .royal-cards-container {
+    width: 100%;
+    max-width: 100%;
+    gap: 8px;
+  }
+
+  .royal-event-card {
+    width: 100%;
+    padding: 8px 10px;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .event-icon-circle {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+  }
+
+  .event-svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .event-details-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .event-label {
+    font-size: 0.72rem;
+  }
+
+  .event-primary-val {
+    font-size: 0.92rem;
+    word-break: break-word;
+  }
+
+  .address-clean-text {
+    font-size: 0.85rem;
+  }
+
+  .event-card-cue {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+    flex-shrink: 0;
+  }
+
+  .royal-program-wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 8px;
+  }
+
+  .ribbon-text {
+    font-size: 0.8rem;
+  }
+
+  .program-days-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .program-col-title {
+    font-size: 0.86rem;
+  }
+
+  .program-col-time {
+    font-size: 0.82rem;
+  }
+
+  .blessing-sentence {
+    font-size: 0.92rem;
+    padding: 0 4px;
+  }
+
+  .gold-lotus-symbol {
+    width: 32px;
+    height: 20px;
+  }
+
+  .footer-band-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 12px 4px;
+    width: 100%;
+  }
+
+  .host-salutation-text {
+    font-size: 0.82rem;
+  }
+
+  .host-dynasty-name {
+    font-size: 1.7rem;
+    word-break: break-word;
+    text-align: center;
+  }
+
+  .royal-quick-dock {
+    flex-direction: column;
+    padding: 10px 8px;
+    gap: 6px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 16px;
+    border-radius: 14px;
+  }
+
+  .dock-card-item {
+    padding: 12px 14px;
+    width: 100%;
+    background: rgba(35, 4, 10, 0.5);
+  }
+
+  .dock-divider {
+    flex-direction: row;
+    width: 85%;
+    height: auto;
+    margin: 3px auto;
+    gap: 10px;
+    opacity: 0.55;
+  }
+
+  .divider-line {
+    width: 42%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-antique), transparent);
+  }
+
+  .royal-footer-modak {
+    width: 36px;
+    height: 38px;
+  }
+
+  .modak-glow-aura {
+    width: 42px;
+    height: 42px;
+  }
+
+  html[lang="en"] .host-dynasty-name,
+  :lang(en) .host-dynasty-name {
+    font-size: 2.35rem;
+  }
+
+  html[lang="en"] .plaque-title,
+  :lang(en) .plaque-title {
+    font-size: 1.35rem;
+  }
+
+  html[lang="en"] .splash-surname-title,
+  :lang(en) .splash-surname-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .title-bappa-royal {
+    font-size: 1.65rem;
+  }
+
+  .title-morya-royal {
+    font-size: 2.05rem;
+  }
+
+  .host-dynasty-name {
+    font-size: 1.5rem;
+  }
+
+  .verse-lead-text,
+  .verse-body-text {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .royal-sloka {
+    font-size: 1.1rem;
+  }
+
+  .royal-footer-modak {
+    width: 30px;
+    height: 32px;
+  }
+
+  .modak-glow-aura {
+    width: 34px;
+    height: 34px;
+  }
+
+  html[lang="en"] .host-dynasty-name,
+  :lang(en) .host-dynasty-name {
+    font-size: 2.1rem;
+  }
+
+  .time-block {
+    padding: 2px 4px;
+  }
+
+  .time-digit {
+    font-size: 0.9rem;
+  }
+}
+
+/* ==============================================
+   PRINT-OPTIMIZED SINGLE-PAGE A4/A5 STYLESHEET
+   ============================================== */
+@page {
+  size: A4 portrait;
+  margin: 6mm 8mm;
+}
+
+@media print {
+  *, *::before, *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html, body {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    color: #1a0104 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    overflow: visible !important;
+  }
+
+  body::before,
+  #flowerCanvas,
+  .royal-top-header,
+  .royal-countdown-strip,
+  .royal-quick-dock,
+  .royal-floating-fab-cluster,
+  .royal-modal-overlay,
+  .audio-notice-pill,
+  .royal-toast-container,
+  .darshan-touch-cue,
+  .event-card-cue,
+  .corner-filigree,
+  .toran-garland-ribbon {
+    display: none !important;
+  }
+
+  .royal-page-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  .royal-portal-master {
+    width: 100% !important;
+    max-width: 100% !important;
+    border: 2.5px solid #a87e2b !important;
+    outline: 1.2px solid #dfb152 !important;
+    outline-offset: -5px !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    background-color: #fffdf9 !important;
+    background-image: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    page-break-after: avoid !important;
+  }
+
+  /* Invocation Header */
+  .royal-invocation-header {
+    padding: 10px 14px 4px !important;
+  }
+
+  .royal-sloka {
+    font-size: 1.35rem !important;
+    color: #58060f !important;
+    padding: 0 !important;
+  }
+
+  .header-mayur {
+    width: 44px !important;
+    height: 22px !important;
+  }
+
+  /* High-Contrast Print SVGs */
+  .arch-svg path[stroke="url(#toranGold)"],
+  .paisley-svg path[stroke="url(#toranGold)"],
+  .header-mayur svg path,
+  .gold-lotus-symbol svg path,
+  .crown-svg path {
+    stroke: #8a5e16 !important;
+  }
+
+  .arch-svg path[fill="url(#toranGold)"],
+  .arch-svg circle,
+  .paisley-svg circle,
+  .crown-svg circle,
+  .header-mayur svg circle {
+    fill: #b88628 !important;
+  }
+
+  .header-mayur, .centerpiece-wing {
+    opacity: 1 !important;
+  }
+
+  /* Dual Grid Layout for Single Page A4 */
+  .royal-dual-grid {
+    display: grid !important;
+    grid-template-columns: 290px 1fr !important;
+    gap: 16px !important;
+    padding: 4px 18px 10px !important;
+    align-items: start !important;
+  }
+
+  .pooja-mandir-showcase {
+    max-width: 290px !important;
+  }
+
+  .temple-arch-crest {
+    max-width: 290px !important;
+    margin-bottom: -3px !important;
+  }
+
+  .pooja-carved-frame {
+    max-width: 290px !important;
+    padding: 6px !important;
+    border: 3px solid #b88628 !important;
+    outline: 1px solid #dfb152 !important;
+    outline-offset: 2px !important;
+    border-radius: 6px !important;
+    background: #240306 !important;
+    box-shadow: none !important;
+  }
+
+  .frame-gold-matting {
+    padding: 2px !important;
+    border: 1px solid #dfb152 !important;
+  }
+
+  .art-bappa-photo {
+    max-height: 350px !important;
+    width: 100% !important;
+    object-fit: contain !important;
+  }
+
+  .frame-museum-plaque {
+    margin-top: 4px !important;
+  }
+
+  .plaque-title {
+    font-size: 0.82rem !important;
+    color: #fae5a2 !important;
+  }
+
+  /* Right Wing: Centerpiece & Decrees */
+  .royal-centerpiece-header {
+    margin-bottom: 6px !important;
+    gap: 6px !important;
+  }
+
+  .centerpiece-crown-crest {
+    width: 28px !important;
+    height: 14px !important;
+  }
+
+  .title-bappa-royal {
+    font-size: 2.1rem !important;
+    line-height: 1.1 !important;
+    color: #4d0711 !important;
+    -webkit-text-fill-color: #4d0711 !important;
+    filter: none !important;
+  }
+
+  .title-morya-royal {
+    font-size: 2.7rem !important;
+    line-height: 1 !important;
+    margin-top: -3px !important;
+    color: #6b0b18 !important;
+    -webkit-text-fill-color: #6b0b18 !important;
+    filter: none !important;
+  }
+
+  .centerpiece-wing {
+    width: 32px !important;
+  }
+
+  .centerpiece-ornate-rule {
+    width: 140px !important;
+    margin-top: 2px !important;
+  }
+
+  /* Sacred Verses */
+  .royal-verses-plaque {
+    margin-bottom: 8px !important;
+  }
+
+  .verse-lead-text {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .royal-verse-crest {
+    margin: 4px auto !important;
+  }
+
+  .verse-body-text {
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    line-height: 1.6 !important;
+    color: var(--ink-maroon) !important;
+  }
+
+  /* Event Details Cards */
+  .royal-cards-container {
+    gap: 6px !important;
+    margin-bottom: 8px !important;
+    max-width: 100% !important;
+  }
+
+  .royal-event-card {
+    padding: 5px 10px !important;
+    border: 1px solid #c59b3f !important;
+    background: #fffdf9 !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+  }
+
+  .event-icon-circle {
+    width: 30px !important;
+    height: 30px !important;
+    background: #4d0711 !important;
+    color: #fae5a2 !important;
+  }
+
+  .event-svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .event-label {
+    font-size: 0.72rem !important;
+  }
+
+  .event-primary-val {
+    font-size: 0.92rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .address-clean-text {
+    font-size: 0.84rem !important;
+  }
+
+  /* Special Program Box */
+  .royal-program-wrapper {
+    padding: 6px 10px 8px !important;
+    margin-bottom: 8px !important;
+    border: 1px solid #c59b3f !important;
+    background: #fffdf9 !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+  }
+
+  .program-ribbon-badge {
+    margin-bottom: 6px !important;
+    padding: 2px 10px !important;
+    font-size: 0.74rem !important;
+    background: #4d0711 !important;
+    color: #fae5a2 !important;
+  }
+
+  .program-days-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+
+  .program-day-card {
+    padding: 8px 10px !important;
+    border: 1px solid rgba(197, 155, 63, 0.4) !important;
+    border-radius: 6px !important;
+    background: #fffdf8 !important;
+    box-shadow: none !important;
+  }
+
+  .day-card-header {
+    padding-bottom: 4px !important;
+  }
+
+  .day-card-badge {
+    font-size: 0.72rem !important;
+    padding: 2px 8px !important;
+  }
+
+  .day-card-body {
+    gap: 8px !important;
+  }
+
+  .program-badge-icon {
+    width: 28px !important;
+    height: 28px !important;
+    background: #4d0711 !important;
+    color: #fae5a2 !important;
+  }
+
+  .prog-svg {
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  .program-col-title {
+    font-size: 0.78rem !important;
+  }
+
+  .program-col-time {
+    font-size: 0.75rem !important;
+  }
+
+  /* Lotus Blessing */
+  .royal-lotus-blessing {
+    margin-top: 2px !important;
+  }
+
+  .gold-lotus-symbol {
+    width: 24px !important;
+    height: 15px !important;
+  }
+
+  .blessing-sentence {
+    font-size: 0.82rem !important;
+    line-height: 1.35 !important;
+  }
+
+  /* Royal Footer Band */
+  .royal-footer-band {
+    padding: 8px 16px 10px !important;
+    background: #240306 !important;
+    border-top: 1.5px solid #a87e2b !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .royal-footer-modak {
+    width: 36px !important;
+    height: 38px !important;
+    display: flex !important;
+  }
+
+  .modak-glow-aura {
+    display: none !important;
+  }
+
+  .host-salutation-text {
+    font-size: 0.85rem !important;
+    color: #fae5a2 !important;
+  }
+
+  .host-dynasty-name {
+    font-size: 1.8rem !important;
+    color: #ffffff !important;
+    text-shadow: none !important;
+    line-height: 1.15 !important;
+  }
+
+  .host-royal-flourish {
+    margin-top: 3px !important;
+  }
+}
+
+/* --- Dhol Tasha Pathak Button & Animation --- */
+.btn-dhol {
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.2), rgba(77, 7, 17, 0.4));
+  border-color: rgba(249, 115, 22, 0.55);
+  color: #fed7aa;
+}
+
+.btn-dhol:hover {
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.38), rgba(110, 11, 24, 0.6));
+  border-color: #fb923c;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.4);
+}
+
+.btn-dhol.active {
+  background: linear-gradient(135deg, #c2410c, #7f1d1d);
+  border-color: #fdba74;
+  color: #fff;
+  box-shadow: 0 0 16px rgba(249, 115, 22, 0.65);
+}
+
+.dhol-badge-icon {
+  font-size: 1rem;
+  line-height: 1;
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.btn-dhol.playing .dhol-badge-icon {
+  animation: dholShake 0.4s infinite alternate ease-in-out;
+}
+
+.dhol-beat-indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #f97316;
+  opacity: 0.35;
+  transition: all 0.08s ease;
+  display: inline-block;
+}
+
+.dhol-beat-indicator.pulse {
+  opacity: 1;
+  transform: scale(1.8);
+  background: #ffedd5;
+  box-shadow: 0 0 10px #f97316, 0 0 16px #ea580c;
+}
+
+.fab-dhol {
+  background: linear-gradient(135deg, #ea580c, #7f1d1d);
+  border-color: #fdba74;
+  color: #fff;
+}
+
+.fab-dhol.playing {
+  box-shadow: 0 0 18px rgba(249, 115, 22, 0.8);
+  animation: dholPulseRing 0.8s infinite alternate ease-in-out;
+}
+
+@keyframes dholShake {
+  0% { transform: rotate(-10deg) scale(0.98); }
+  100% { transform: rotate(10deg) scale(1.15); }
+}
+
+@keyframes dholPulseRing {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.12); }
+}
+
+/* ==========================================================================
+   ROYAL FESTIVE SPLASH SCREEN OVERLAY ("सावळे यांचा मोरया • ३५ वे वर्ष")
+   ========================================================================== */
+.royal-splash-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 999999;
+  background: radial-gradient(circle at 50% 45%, #2d050c 0%, #150104 70%, #0a0002 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.65s cubic-bezier(0.4, 0, 0.2, 1), transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.royal-splash-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.12) 0%, transparent 65%);
+  pointer-events: none;
+  animation: splashAuraPulse 3s infinite ease-in-out;
+}
+
+@keyframes splashAuraPulse {
+  0%, 100% { opacity: 0.6; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1.04); }
+}
+
+.royal-splash-overlay.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.05);
+  pointer-events: none;
+}
+
+.splash-content-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: splashScaleIn 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes splashScaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.splash-svg {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 12px 35px rgba(0, 0, 0, 0.8));
+}
+
+/* Center Floral Scalloped Leaf Medallion Animation */
+.splash-medallion-leaf {
+  transform-origin: 200px 155px;
+  animation: splashLeafPulse 3.5s infinite ease-in-out alternate;
+}
+
+@keyframes splashLeafPulse {
+  0% {
+    transform: scale(0.98) rotate(-1deg);
+    filter: drop-shadow(0 0 10px rgba(223, 177, 82, 0.35));
+  }
+  50% {
+    transform: scale(1.025) rotate(1.5deg);
+    filter: drop-shadow(0 0 22px rgba(223, 177, 82, 0.75));
+  }
+  100% {
+    transform: scale(0.98) rotate(-1deg);
+    filter: drop-shadow(0 0 10px rgba(223, 177, 82, 0.35));
+  }
+}
+
+.splash-corner {
+  position: absolute;
+  color: var(--gold-foil);
+  font-size: 1.4rem;
+  opacity: 0.65;
+  pointer-events: none;
+  filter: drop-shadow(0 0 6px rgba(223, 177, 82, 0.4));
+}
+.corner-tl { top: 24px; left: 24px; }
+.corner-tr { top: 24px; right: 24px; }
+.corner-bl { bottom: 24px; left: 24px; }
+.corner-br { bottom: 24px; right: 24px; }
+
+.splash-arch-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.splash-title-flourish {
+  color: var(--gold-foil);
+  font-size: 0.72rem;
+  letter-spacing: 6px;
+  opacity: 0.85;
+}
+
+/* HTML div replaces SVG textPath — works on iOS Safari for Devanagari */
+.splash-arch-title-html {
+  font-family: 'Rozha One', 'Yatra One', 'Noto Serif Devanagari', 'Tiro Devanagari Marathi', serif;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+  background: linear-gradient(180deg, #ffffff 0%, #fff4cc 30%, #e6be53 75%, #b88628 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #ffd700; /* fallback */
+  filter: drop-shadow(0 4px 14px rgba(223, 177, 82, 0.55)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.9));
+  padding: 0 12px;
+  line-height: 1.35;
+}
+
+.splash-medallion-wrapper {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+}
+
+.splash-medallion-html-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+  width: 100%;
+  padding-top: 4px;
+}
+
+.medallion-om {
+  font-family: serif;
+  font-size: 17px;
+  color: #ffd700;
+  opacity: 0.9;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.splash-medallion-year {
+  font-family: 'Noto Serif Devanagari', 'Tiro Devanagari Marathi', 'Yatra One', serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.9));
+}
+
+.splash-medallion-label {
+  font-family: 'Noto Serif Devanagari', 'Tiro Devanagari Marathi', 'Rozha One', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffe082;
+  letter-spacing: 3.5px;
+  line-height: 1.15;
+  margin-top: 2px;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.85));
+}
+
+.medallion-star {
+  font-size: 12px;
+  color: #ffd700;
+  opacity: 0.85;
+  margin-top: 4px;
+  line-height: 1;
+}
+
+.splash-enter-cue {
+  margin-top: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-marathi-formal);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff3c4;
+  letter-spacing: 1.5px;
+  padding: 12px 30px;
+  border: 1.5px solid rgba(223, 177, 82, 0.65);
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(65, 8, 17, 0.95) 0%, rgba(30, 3, 8, 0.95) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.7), inset 0 0 14px rgba(223, 177, 82, 0.25);
+  animation: splashCuePulse 2.2s infinite ease-in-out;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.splash-enter-cue:hover {
+  background: linear-gradient(135deg, rgba(95, 12, 26, 0.98) 0%, rgba(50, 5, 13, 0.98) 100%);
+  border-color: var(--gold-light);
+  box-shadow: 0 8px 30px rgba(223, 177, 82, 0.45), inset 0 0 18px rgba(223, 177, 82, 0.35);
+  transform: translateY(-2px) scale(1.03);
+}
+
+@keyframes splashCuePulse {
+  0%, 100% {
+    opacity: 0.9;
+    transform: scale(1);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.7), inset 0 0 14px rgba(223, 177, 82, 0.2);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+    box-shadow: 0 8px 32px rgba(223, 177, 82, 0.45), inset 0 0 20px rgba(223, 177, 82, 0.35);
+  }
+}
+
+.splash-enter-cue .cue-arrow {
+  font-size: 1.15rem;
+  color: var(--gold-foil);
+  transition: transform 0.25s ease;
+}
+
+.splash-enter-cue:hover .cue-arrow {
+  transform: translateX(4px);
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .splash-corner {
+    font-size: 1.1rem;
+  }
+  .corner-tl { top: 16px; left: 16px; }
+  .corner-tr { top: 16px; right: 16px; }
+  .corner-bl { bottom: 16px; left: 16px; }
+  .corner-br { bottom: 16px; right: 16px; }
+
+  .splash-medallion-wrapper {
+    max-width: 300px;
+  }
+  .splash-arch-title-html {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  .splash-medallion-year {
+    font-size: 32px;
+  }
+  .splash-medallion-label {
+    font-size: 20px;
+  }
+  .medallion-om {
+    font-size: 14px;
+  }
+  .splash-enter-cue {
+    padding: 10px 24px;
+    font-size: 0.92rem;
+  }
+}
+
